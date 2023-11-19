@@ -66,8 +66,7 @@ try {
   const response=await deletetheNoteById(note._id)
   if(response.data.result){
     getAllNotes()
-    setPerticularDeletedId(note._id)
-    
+    setPerticularDeletedId(note._id) 
   }
 } catch (error) {
   console.log(error)
