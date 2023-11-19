@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-wrapper{
+  width: 100%;
   display: flex;
+  justify-content: center;
+overflow-y: auto;
   flex-direction: column;
+  height: 100vh;
+  align-items: center;
+
+
+}
+.background-wrapper{
+  border:  1px solid #DADCE0 !important;
+
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-color: #20272C !important;
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+  border-color: #20272C !important;
+  }
+   /* notessssssssssss */
+  .allnotes{
+display: flex;
+flex-direction: column;
+  }
+
+  .singleNote{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom:1px solid white ;
+  }
+  .background-color-container{
+    background-color: #20272C;
+    /* overflow: hidden !important; */
+    height: 73vh;
+  }
+  .all-notes-container{
+    border-right: 1px solid lightgray;
+    height: 80vh;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .background-container {
+      height: auto; /* Allow the height to adjust dynamically based on content */
+    }
+  }
+  /* notessssssssssss------------------------------------------- */
+  .hole-container{
+ 
+    width: 80vw;
+    height: 80vh;
+ 
+  }
+  .home-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+ 
+  .hole-content-container{
+    border: 1px solid lightgray;
+    height: 80vh;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+  .row > * {
+    padding: 0 !important; 
+  }
+/* buttonss */
+
+.delete-button{
+  background-color:  transparent !important ;
+  border: none !important; 
+  color: white !important;
+}
+.search-wrapper{
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: space-around;
+ 
+  padding-bottom: 7px;
+  padding-top: 4px;
+}
+.search-box-wrap{
+  padding: 20px;
+width: unset !important;
+border: transparent !important;
+}
+.form-control:focus {
+     /* background-color: transparent !important; */
+     border-color:#dee2e6 !important;
+}
+
+
+.create-notes-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  z-index: 1000;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.form-control {
+  display: block !important;
+
 }
 
-.App-link {
-  color: #61dafb;
+.add-button{
+  background-color: white;
+  padding:3px 6px;
+  border-radius: 5px;
+  border: transparent;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: 'Roboto', sans-serif !important;
 }
+.hovertheCloseBtn:hover {
+
+ background-color: #20272C;
+ padding-right: 4px;
+ padding-left: 2px;
+ border-radius: 5px;
+}
+.single-content{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+height: 100%;
+ 
+}
+.perticular-content{
+background-color:#20272C;
+height: 100%;
+width: 74%;
+padding-left: 10px;
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+padding-right: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+padding-top: 10px;
+max-height: 300px;
+padding-bottom: 20px;
+overflow: auto;
+}
+
+.edit-button{
+  background-color: transparent !important;
+  border: transparent !important;
+  color: white !important;
+}
+
+.inputAndSearch {
+  display: flex !important;
+  align-items: center !important; 
+  background-color: white;/* Vertical alignment centered */
+  border-radius: 10px;
+  padding-right: 5px;
+}
+
+.dropdown-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Link {
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background-color: #20272C !important;
+}
+.btn-secondary{
+      --bs-btn-color:none!important;
+    --bs-btn-bg:transparent !important;
+     --bs-btn-border-color:transparent !important;
+  }
+
+  .welcomenote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+max-height: 200px;
+height: 50vh;
+  }
+  .submit-button{
+    background-color: #20272C !important;
+  }
+  .btn:hover{
+    border-color: transparent !important;
+  }
+
+  .img-wrapper{
+
+  }
